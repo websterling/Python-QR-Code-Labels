@@ -1,4 +1,4 @@
-#! /python
+#! /usr/bin/env python
 
 from pyqrcode import QRCode
 from PIL import Image, ImageDraw, ImageFont
