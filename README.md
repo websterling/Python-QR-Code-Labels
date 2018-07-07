@@ -5,7 +5,7 @@ Fairly simple code to produce sheets of custom QR Code labels, sequentially numb
 
 Requires the packages pyqrcode, and PIL compiled with ImageFont support.
 
-The following 2 lines provide the starting number for the labels and the number of sheets to print. These are the only 2 lines that should neeed any editing.
+The following 2 lines in qr_code_label.py provide the starting number for the labels and the number of sheets to print. These are the only 2 lines that should neeed any editing.
 
  start = 1000001<br />
  num_sheets = 4
