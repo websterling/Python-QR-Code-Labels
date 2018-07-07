@@ -10,4 +10,6 @@ The following 2 lines provide the starting number for the labels and the number 
 start = 1000001
 num_sheets = 4
 
-The sheets are produced as png images. 
+The sheets are produced as png images. They are formatted to be printed centered on a letter size (8.5" x 11") page.
+
+helvetica-10.pil and helvetica-10.png are font files, and sheet1.png is a sample sheet of labels.
