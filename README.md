@@ -13,13 +13,13 @@ The following 2 lines in qr_code_label.py provide the starting number for the la
 start = 1000001<br />
 num_sheets = 4
 
-This line contains text printed on the label along with the sequential number. Only the number is encoded in the QR Code.
+This line contains the text printed on the label along with the sequential number. Only the number is encoded in the QR Code.
 
 d.text((130, 22), "Field Sample", font=font, fill=(0, 0, 0)
 
 These are the only 3 lines that should need any editing.
 
-The sheets are produced as png images. They are formatted to be printed centered on a letter size (8.5" x 11") page. I've printed from both in Photoshop and OpenOffice Writer.
+The sheets are produced as png images. They are formatted to be printed centered on a letter size (8.5" x 11") page. I've printed from both Photoshop and OpenOffice Writer.
 
 helvetica-10.pil and helvetica-10.png are font files, and sheet1.png is a sample sheet of labels.
 
