@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /python
 
 from pyqrcode import QRCode
 from PIL import Image, ImageDraw, ImageFont
@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 Generates sheets of 10 labels with sequentially numbered
 QR codes formatted for printing on Avery 8161 labels.
 
-George S. Williams physicist@websterling.com 07/2018
+George S. Williams  physicist@websterling.com  07/2018
 '''
 
 start = 1000001
