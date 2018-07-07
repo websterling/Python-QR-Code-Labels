@@ -8,11 +8,13 @@ Requires the packages pyqrcode, pypng, and PIL, and has been tested in Python 2.
 https://github.com/mnooner256/pyqrcode<br />
 https://github.com/drj11/pypng
 
-The following 2 lines in qr_code_label.py provide the starting number for the labels and the number of sheets to print. 
+The following 2 lines in qr_code_label.py provide the starting number for the labels and the number of sheets to print.
+
 start = 1000001<br />
 num_sheets = 4
 
 This line contains text printed on the label along with the sequential number. Only the number is encoded in the QR Code.
+
 d.text((130, 22), "Field Sample", font=font, fill=(0, 0, 0)
 
 These are the only 3 lines that should need any editing.
