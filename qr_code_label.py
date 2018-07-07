@@ -35,9 +35,9 @@ for j in range(1, num_sheets + 1):
         d.text((130, 22), "Field Sample", font=font, fill=(0, 0, 0))
         d.text((138, 37), str(count), font=font, fill=(0, 0, 0))
 
-        h_offset = i % 2 * 302
-        row = abs(i / 2)
-        y_offset = row * 72
+        h_offset = int(i % 2 * 302)
+        row = int(abs(i / 2))
+        y_offset = int(row * 72)
         sheet.paste(label, (h_offset, y_offset))
 
     sheet_name = 'sheet' + str(j) + '.png'
