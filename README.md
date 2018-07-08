@@ -10,9 +10,11 @@ https://github.com/drj11/pypng
 
 The following 3 lines in qr_code_label.py provide the starting number for the labels, the number of sheets to print, and the text printed on the label along with the sequential number. Only the number is encoded in the QR Code.
 
-start = 1000001<br />
-num_sheets = 4<br />
+```python
+start = 1000001
+num_sheets = 4
 label_text = "Field Sample"
+```
 
 These are the only 3 lines that should need any editing.
 
