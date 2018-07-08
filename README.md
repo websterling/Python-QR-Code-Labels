@@ -5,8 +5,8 @@ Fairly simple code to produce sheets of custom QR Code labels, sequentially numb
 
 Requires the packages pyqrcode, pypng, and PIL, and has been tested in Python 2.7.3 in Windows and Linux, 3.2.3 in Linux, and 3.4.3 in Windows 64-bit.
 
-<https://github.com/mnooner256/pyqrcode>
-<https://github.com/drj11/pypng>
+https://github.com/mnooner256/pyqrcode<br />
+https://github.com/drj11/pypng
 
 The following 3 lines in qr_code_label.py provide the starting number for the labels, the number of sheets to print, and the text printed on the label along with the sequential number. Only the number is encoded in the QR Code.
 ```python
