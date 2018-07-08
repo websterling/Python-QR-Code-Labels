@@ -22,4 +22,4 @@ The sheets are produced as png images. They are formatted to be printed centered
 
 helvetica-10.pil and helvetica-10.png are required font related files, and sheet1.png is a sample sheet of labels.
 
-Offered without guarantee or warranty in case someone will find it useful.
+Although written as a proof of concept, the code is fully up to the intended task. It is offered without guarantee or warranty in case someone will find it useful.
