@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /python
 
 from pyqrcode import QRCode
 from PIL import Image, ImageDraw, ImageFont
@@ -12,8 +12,10 @@ George S. Williams  physicist@websterling.com  07/2018
 
 start = 1000001
 num_sheets = 4
+label_text = "Field Sample"
 
 count = start - 1
+font = ImageFont.load('helvetica-10.pil')
 
 for j in range(1, num_sheets + 1):
     sheet = Image.new('RGBA', (590, 720), (255, 255, 255, 255))
@@ -30,9 +32,8 @@ for j in range(1, num_sheets + 1):
         offset = ((bg_h - qr_img_h) // 2, (bg_h - qr_img_h) // 2)
         label.paste(qr_img, offset)
 
-        font = ImageFont.load('helvetica-10.pil')
         d = ImageDraw.Draw(label)
-        d.text((130, 22), "Field Sample", font=font, fill=(0, 0, 0))
+        d.text((130, 22), label_text, font=font, fill=(0, 0, 0))
         d.text((138, 37), str(count), font=font, fill=(0, 0, 0))
 
         h_offset = int(i % 2 * 302)
