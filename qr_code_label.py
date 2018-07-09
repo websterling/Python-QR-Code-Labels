@@ -10,7 +10,7 @@ QR codes formatted for printing on Avery 8161 labels.
 George S. Williams  physicist@websterling.com  07/2018
 '''
 
-start = 1000001
+start = 1
 num_sheets = 4
 label_text = "Field Sample"
 
@@ -22,7 +22,8 @@ for j in range(1, num_sheets + 1):
 
     for i in range(0, 20):
         count = count + 1
-        qr = QRCode(count)
+        seq = str(count).zfill(7)
+        qr = QRCode(seq)
         qr.png('qr.png', scale=2)
 
         qr_img = Image.open('qr.png', 'r')
@@ -34,7 +35,7 @@ for j in range(1, num_sheets + 1):
 
         d = ImageDraw.Draw(label)
         d.text((130, 22), label_text, font=font, fill=(0, 0, 0))
-        d.text((138, 37), str(count), font=font, fill=(0, 0, 0))
+        d.text((138, 37), seq, font=font, fill=(0, 0, 0))
 
         h_offset = int(i % 2 * 302)
         row = int(abs(i / 2))
