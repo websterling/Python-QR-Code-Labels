@@ -12,10 +12,10 @@ George S. Williams  physicist@websterling.com  07/2018
 
 start = 1
 num_sheets = 4
-label_text = "Field Sample"
+label_text = "This Is Sample Label Text"
 
 count = start - 1
-font = ImageFont.load('helvetica-10.pil')
+font = ImageFont.load('courR08.pil')
 
 for j in range(1, num_sheets + 1):
     sheet = Image.new('RGBA', (590, 720), (255, 255, 255, 255))
@@ -34,8 +34,10 @@ for j in range(1, num_sheets + 1):
         label.paste(qr_img, offset)
 
         d = ImageDraw.Draw(label)
-        d.text((130, 22), label_text, font=font, fill=(0, 0, 0))
-        d.text((138, 37), seq, font=font, fill=(0, 0, 0))
+        label_h_offset = int(166 - (5 * len(label_text) / 2))
+        d.text((label_h_offset, 22), label_text, font=font, fill=(0, 0, 0))
+        seq_h_offset = int(166 -(5 * len(seq) / 2))
+        d.text((seq_h_offset, 37), seq, font=font, fill=(0, 0, 0))
 
         h_offset = int(i % 2 * 302)
         row = int(abs(i / 2))
