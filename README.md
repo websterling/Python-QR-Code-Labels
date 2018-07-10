@@ -18,6 +18,6 @@ These are the only 3 lines that should need any editing.
 
 The sheets are produced as png images. They are formatted to be printed centered on a letter size (8.5" x 11") page. I've printed from both Photoshop and OpenOffice Writer.
 
-helvetica-10.pil and helvetica-10.png are required font related files, and sheet1.png is a sample sheet of labels.
+courR08.pil and courR08.png are required font related files, and sheet1.png is a sample sheet of labels.
 
 This is still a work in progress. Although written as a proof of concept, the code is fully functional and useful. It is offered without guarantee or warranty in case someone will find it useful.
